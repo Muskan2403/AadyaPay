@@ -13,25 +13,25 @@ export default async function handler(req, res) {
 
   try {
     const transporter = nodemailer.createTransport({
-  host: "smtp.gmail.com",
-  port: 465,
-  secure: true,
-  auth: {
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS,
-  },
-});
+      service: "gmail",
+      auth: {
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS, // this should be your App Password
+      },
+    });
 
-    await transporter.sendMail({
+    const mailOptions = {
       from: email,
       to: process.env.EMAIL_USER,
       subject: `New Contact Form Submission from ${name}`,
       text: `Name: ${name}\nEmail: ${email}\nMessage:\n${message}`,
-    });
+    };
 
-    res.status(200).json({ message: "Message sent successfully" });
+    await transporter.sendMail(mailOptions);
+
+    return res.status(200).json({ message: "Message sent successfully" });
   } catch (err) {
-    console.error(err);
-    res.status(500).json({ error: "Failed to send message" });
+    console.error("Email send error:", err);
+    return res.status(500).json({ error: "Failed to send message" });
   }
 }

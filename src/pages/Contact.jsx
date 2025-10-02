@@ -28,7 +28,7 @@ export default function Contact() {
         setStatus("error");
       }
     } catch (err) {
-      console.error(err);
+      console.error("Fetch error:", err);
       setStatus("error");
     }
   };
