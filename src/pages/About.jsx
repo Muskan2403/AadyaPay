@@ -1,0 +1,372 @@
+// // import { motion } from "framer-motion";
+// // import { Award, Shield, Users, Zap } from "lucide-react";
+
+// // export default function About() {
+// //   const features = [
+// //     {
+// //       icon: Shield,
+// //       title: "Bank-Grade Security",
+// //       desc: "End-to-end encryption ensures your data and money stay safe.",
+// //     },
+// //     {
+// //       icon: Zap,
+// //       title: "Lightning Fast",
+// //       desc: "Recharges and payments happen instantly — no delays.",
+// //     },
+// //     {
+// //       icon: Users,
+// //       title: "Made for Everyone",
+// //       desc: "From students to families, we simplify payments for all.",
+// //     },
+// //     {
+// //       icon: Award,
+// //       title: "Rewarding",
+// //       desc: "Enjoy cashback, loyalty rewards, and exclusive offers.",
+// //     },
+// //   ];
+
+  
+
+// //   return (
+// //     <section className="bg-gradient-to-b from-blue-50 to-white">
+// //       {/* Hero */}
+// //       <motion.div
+// //         className="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-12 items-center"
+// //         initial={{ opacity: 0, y: 30 }}
+// //         whileInView={{ opacity: 1, y: 0 }}
+// //         viewport={{ once: false }}
+// //         transition={{ duration: 0.8 }}
+// //       >
+// //         <div>
+// //           <h1 className="text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
+// //             About <span className="text-blue-800">PinPay</span>
+// //           </h1>
+// //           <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+// //   PinPay is your all-in-one digital payment app for 
+// //   <strong> recharge, bill payments, travel booking, and insurance</strong>. 
+// //   No need to juggle multiple apps — we bring it all under one simple, secure, 
+// //   and rewarding platform. With cashback on every payment, instant UPI 
+// //   transfers, and 24×7 customer support, PinPay ensures that your 
+// //   transactions are not only fast and safe but also rewarding. From 
+// //   utility bills to entertainment recharges, ticket bookings to policy renewals, 
+// //   everything you need is just a tap away.
+// // </p>
+          
+// //         </div>
+// //         <motion.div
+// //           className="flex justify-center"
+// //           initial={{ opacity: 0, x: 50 }}
+// //           whileInView={{ opacity: 1, x: 0 }}
+// //           viewport={{ once: false }}
+// //           transition={{ duration: 0.8 }}
+// //         >
+// //           <img
+// //             src="/images/phone-mock.png"
+// //             alt="PinPay App Preview"
+// //             className="w-72 md:w-96 drop-shadow-2xl"
+// //           />
+// //         </motion.div>
+// //       </motion.div>
+
+// //       {/* Why Section */}
+// //       <div className="max-w-6xl mx-auto px-6 py-16">
+// //         <h2 className="text-3xl font-bold text-center text-gray-900 mb-6">
+// //           Why PinPay?
+// //         </h2>
+// //         <p className="text-center text-gray-700 max-w-3xl mx-auto mb-12">
+// //           Other apps make you switch between platforms for different needs.
+// //           PinPay combines <strong>all essentials in one app</strong>, saving you time, money,
+// //           and effort. With <strong>bank-grade security, lightning speed, and
+// //           cashback</strong>, every payment feels effortless.
+// //         </p>
+
+// //         {/* Feature Grid */}
+// //         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+// //           {features.map((item, i) => {
+// //             const Icon = item.icon;
+// //             return (
+// //               <motion.div
+// //                 key={i}
+// //                 className="p-6 bg-white/70 backdrop-blur rounded-2xl shadow hover:shadow-xl transition"
+// //                 initial={{ opacity: 0, y: 20 }}
+// //                 whileInView={{ opacity: 1, y: 0 }}
+// //                 viewport={{ once: false }}
+// //                 transition={{ duration: 0.6, delay: i * 0.1 }}
+// //               >
+// //                 <Icon className="w-10 h-10 text-blue-800 mb-4" />
+// //                 <h3 className="font-semibold text-lg mb-2">{item.title}</h3>
+// //                 <p className="text-gray-600 text-sm">{item.desc}</p>
+// //               </motion.div>
+// //             );
+// //           })}
+// //         </div>
+// //       </div>
+
+// //       {/* Vision */}
+// //       <motion.div
+// //         className="bg-blue-800 text-white py-20"
+// //         initial={{ opacity: 0, y: 20 }}
+// //         whileInView={{ opacity: 1, y: 0 }}
+// //         viewport={{ once: false }}
+// //         transition={{ duration: 0.8 }}
+// //       >
+// //         <div className="max-w-5xl mx-auto px-6 text-center">
+// //           <h2 className="text-4xl font-bold mb-6">Our Vision</h2>
+// //           <p className="text-lg leading-relaxed">
+// //             At PinPay, we believe digital payments should be <strong>simple,
+// //             trustworthy, and rewarding</strong>. Our vision is to empower every Indian
+// //             with a <strong>single app for all essential payments</strong>, while making
+// //             finance smarter and more accessible for everyone.
+// //           </p>
+// //         </div>
+// //       </motion.div>
+// //     </section>
+// //   );
+// // }
+
+
+// import { motion } from "framer-motion";
+// import { Award, Shield, Users, Zap } from "lucide-react";
+
+// export default function About() {
+//   const features = [
+//     {
+//       icon: Shield,
+//       title: "Bank-Grade Security",
+//       desc: "End-to-end encryption ensures your data and money stay safe.",
+//     },
+//     {
+//       icon: Zap,
+//       title: "Lightning Fast",
+//       desc: "Recharges and payments happen instantly — no delays.",
+//     },
+//     {
+//       icon: Users,
+//       title: "Made for Everyone",
+//       desc: "From students to families, we simplify payments for all.",
+//     },
+//     {
+//       icon: Award,
+//       title: "Rewarding",
+//       desc: "Enjoy cashback, loyalty rewards, and exclusive offers.",
+//     },
+//   ];
+
+//   return (
+//     <section className="bg-gray-50">
+//       {/* Hero / Introduction */}
+//       <motion.div
+//         className="max-w-7xl mx-auto px-6 py-16 md:py-24 grid md:grid-cols-2 gap-12 items-center"
+//         initial={{ opacity: 0, y: 30 }}
+//         whileInView={{ opacity: 1, y: 0 }}
+//         viewport={{ once: false }}
+//         transition={{ duration: 0.8 }}
+//       >
+//         <div className="space-y-6">
+//           <h1 className="text-5xl md:text-6xl font-extrabold text-blue-950 leading-tight">
+//             About <span className="text-blue-900">AadyaPay</span>
+//           </h1>
+//           <p className="text-gray-900 text-lg md:text-xl leading-relaxed">
+//             AadyaPay is your all-in-one digital payment app for{" "}
+//             <strong>mobile recharge, bill payments, travel bookings, and city services</strong>.
+//             One app, <strong>all solutions</strong> — fast, secure, and rewarding.
+//           </p>
+//           <p className="text-gray-900 text-lg md:text-xl leading-relaxed">
+//             Enjoy instant transactions, cashback rewards, and 24/7 support, making payments
+//             effortless and reliable wherever you are.
+//           </p>
+//         </div>
+//         <motion.div
+//           className="flex justify-center relative"
+//           initial={{ opacity: 0, x: 50 }}
+//           whileInView={{ opacity: 1, x: 0 }}
+//           viewport={{ once: false }}
+//           transition={{ duration: 0.8 }}
+//         >
+//           <img
+//             src="/images/phone-mock.png"
+//             alt="AadyaPay App Preview"
+//             className="w-72 md:w-96 lg:w-[400px] drop-shadow-2xl rounded-3xl"
+//           />
+//           {/* Subtle glow behind phone */}
+//           <div className="absolute -inset-4 rounded-3xl bg-gradient-to-tr from-[#B9FBC0]/40 via-[#A6E3E9]/40 to-[#4FC3F7]/40 blur-3xl"></div>
+//         </motion.div>
+//       </motion.div>
+
+//       {/* Features / Why AadyaPay */}
+//       <div className="max-w-6xl mx-auto px-6 py-16">
+//         <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-950 mb-6">
+//           Why Choose AadyaPay?
+//         </h2>
+//         <p className="text-gray-900 text-center max-w-3xl mx-auto mb-12 text-lg">
+//           AadyaPay combines <strong>all essential services</strong> in a single, smooth app.
+//           With <strong>bank-grade security, instant payments, and rewards</strong>, you can
+//           manage everything without switching apps.
+//         </p>
+
+//         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+//           {features.map((item, i) => {
+//             const Icon = item.icon;
+//             return (
+//               <motion.div
+//                 key={i}
+//                 className="p-6 rounded-3xl bg-white/60 backdrop-blur-md shadow-lg hover:shadow-2xl transition-transform transform hover:-translate-y-2 cursor-pointer"
+//                 initial={{ opacity: 0, y: 20 }}
+//                 whileInView={{ opacity: 1, y: 0 }}
+//                 viewport={{ once: false }}
+//                 transition={{ duration: 0.6, delay: i * 0.1 }}
+//               >
+//                 <div className="w-14 h-14 flex items-center justify-center bg-white rounded-full mx-auto mb-4 shadow">
+//                   <Icon className="w-6 h-6 text-black" />
+//                 </div>
+//                 <h3 className="text-lg font-bold text-blue-950 mb-2 text-center">{item.title}</h3>
+//                 <p className="text-gray-900 text-sm text-center">{item.desc}</p>
+//               </motion.div>
+//             );
+//           })}
+//         </div>
+//       </div>
+
+//       {/* Vision */}
+//       <motion.div
+//         className="bg-blue-950 text-white py-20"
+//         initial={{ opacity: 0, y: 20 }}
+//         whileInView={{ opacity: 1, y: 0 }}
+//         viewport={{ once: false }}
+//         transition={{ duration: 0.8 }}
+//       >
+//         <div className="max-w-5xl mx-auto px-6 text-center space-y-4">
+//           <h2 className="text-4xl md:text-5xl font-bold mb-4">Our Vision</h2>
+//           <p className="text-lg md:text-xl leading-relaxed">
+//             At AadyaPay, we believe digital payments should be <strong>simple, reliable, and rewarding</strong>.
+//             Our vision is to empower every user with a <strong>single app for all essential payments</strong>,
+//             making finance smarter and accessible for everyone.
+//           </p>
+//         </div>
+//       </motion.div>
+//     </section>
+//   );
+// }
+
+import { motion } from "framer-motion";
+import { Award, Shield, Users, Zap } from "lucide-react";
+
+export default function About() {
+  const features = [
+    {
+      icon: Shield,
+      title: "Bank-Grade Security",
+      desc: "End-to-end encryption ensures your data and money stay safe.",
+    },
+    {
+      icon: Zap,
+      title: "Lightning Fast",
+      desc: "Recharges and payments happen instantly — no delays.",
+    },
+    {
+      icon: Users,
+      title: "Made for Everyone",
+      desc: "From students to families, we simplify payments for all.",
+    },
+    {
+      icon: Award,
+      title: "Rewarding",
+      desc: "Enjoy cashback, loyalty rewards, and exclusive offers.",
+    },
+  ];
+
+  return (
+    <section className="bg-gray-50">
+      {/* Hero / Introduction */}
+      <motion.div
+        className="max-w-7xl mx-auto px-6 py-16 md:py-24 grid md:grid-cols-2 gap-12 items-center"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false }}
+        transition={{ duration: 0.8 }}
+      >
+        <div className="space-y-6">
+          <h1 className="text-5xl md:text-6xl font-extrabold text-blue-950 leading-tight">
+            About <span className="bg-gradient-to-br from-[#8FCF9C] via-[#73C6D6] to-[#2196F3] bg-clip-text text-transparent">AadyaPay</span>
+          </h1>
+          <p className="text-gray-900 text-lg md:text-xl leading-relaxed">
+            AadyaPay is your all-in-one digital payment app for{" "}
+            <strong>mobile recharge, bill payments, travel bookings, and city services</strong>.
+            One app, <strong>all solutions</strong> — fast, secure, and rewarding.
+          </p>
+          <p className="text-gray-900 text-lg md:text-xl leading-relaxed">
+            Enjoy instant transactions, cashback rewards, and 24/7 support, making payments
+            effortless and reliable wherever you are.
+          </p>
+        </div>
+        <motion.div
+          className="flex justify-center relative"
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: false }}
+          transition={{ duration: 0.8 }}
+        >
+          <img
+            src="/images/phone-mock.png"
+            alt="AadyaPay App Preview"
+            className="w-72 md:w-96 lg:w-[400px] drop-shadow-2xl rounded-3xl"
+          />
+          {/* Subtle glow behind phone */}
+          <div className="absolute -inset-4 rounded-3xl bg-gradient-to-tr from-[#B9FBC0]/40 via-[#A6E3E9]/40 to-[#4FC3F7]/40 blur-3xl"></div>
+        </motion.div>
+      </motion.div>
+
+      {/* Features / Why AadyaPay */}
+      <div className="max-w-6xl mx-auto px-6 py-16">
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-950 mb-6">
+          Why Choose AadyaPay?
+        </h2>
+        <p className="text-gray-900 text-center max-w-3xl mx-auto mb-12 text-lg">
+          AadyaPay combines <strong>all essential services</strong> in a single, smooth app.
+          With <strong>bank-grade security, instant payments, and rewards</strong>, you can
+          manage everything without switching apps.
+        </p>
+
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+          {features.map((item, i) => {
+            const Icon = item.icon;
+            return (
+              <motion.div
+                key={i}
+                className="p-6 rounded-3xl bg-gradient-to-br from-[#B9FBC0] via-[#A6E3E9] to-[#4FC3F7] shadow-lg hover:shadow-2xl transition-transform transform hover:-translate-y-2 cursor-pointer"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: false }}
+                transition={{ duration: 0.6, delay: i * 0.1 }}
+              >
+                <div className="w-14 h-14 flex items-center justify-center bg-white rounded-full mx-auto mb-4 shadow">
+                  <Icon className="w-6 h-6 text-black" />
+                </div>
+                <h3 className="text-lg font-bold text-blue-950 mb-2 text-center">{item.title}</h3>
+                <p className="text-gray-900 text-sm text-center">{item.desc}</p>
+              </motion.div>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Vision */}
+      <motion.div
+        className="bg-blue-950 text-white py-20"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false }}
+        transition={{ duration: 0.8 }}
+      >
+        <div className="max-w-5xl mx-auto px-6 text-center space-y-4">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">Our Vision</h2>
+          <p className="text-lg md:text-xl leading-relaxed">
+            At AadyaPay, we believe digital payments should be <strong>simple, reliable, and rewarding</strong>.
+            Our vision is to empower every user with a <strong>single app for all essential payments</strong>,
+            making finance smarter and accessible for everyone.
+          </p>
+        </div>
+      </motion.div>
+    </section>
+  );
+}
